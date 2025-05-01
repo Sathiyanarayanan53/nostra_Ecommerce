@@ -13,7 +13,7 @@ A modern, responsive clothing website built using HTML, CSS, and JavaScript. Thi
 
 ## 🚀 Demo
 
-[Live Demo](https://your-demo-link.com)  
+[Live Demo](https://sathiyanarayanan53.github.io/nostra_Ecommerce/)  
 *(replace with your deployed link or GitHub Pages link)*
 
 ## 💻 Technologies Used
