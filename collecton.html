@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="collection.css">
+<script src="collection.js" defer></script>
+<body>
+    
+    <!--Ads-->
+    <secton>
+        <div class="ads" id="sign">
+            <h2>Sign Up and <span>GET 20% OFF </span>for your first Order </h2>
+            <p id="close">X</p>
+        </div>
+       
+    </secton>
+    
+    <!--navbar-->
+
+    <section class="navbar">
+        <h1>Nostra</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>New Arrival</li>
+            <li>Most Wanted</li>
+            <li>Collection</li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </section>
+    <div class="line"></div>
+
+<section class="container">
+    <div class="occasion">
+        <h1>Occassion</h1>
+        <ul>
+            <li> <input type="checkbox" id="toggleCheckbox"><label>Summer</label></li>
+
+            <li><input type="checkbox"  id="toggleCheckbox1"> <label>Party</label></li>
+         <li>   <input type="checkbox"  id="toggleCheckbox2"> <label>Beach</label></li>
+         <li>   <input type="checkbox"  id="toggleCheckbox3"> <label>All</label></li>
+        </ul>
+       
+    </div>
+    <div class="searchbar">
+        <input type="text" placeholder="Search" >
+        <img src="search_icon.png">
+    </div>
+    <div class="cloths-1" >
+        <div class="o" id="summer">
+            <img src="yellow_1.png" >
+            <h2>Floral Summer Shirt</h2>
+            <p>₹499</p>
+        </div>
+        <div class="t" id="beach" >
+            <img  src="red_2.png" >
+            <h2> Shirt Beach Red</h2>
+            <p>₹599</p>
+        </div>
+        <div class="th" id="Party">
+            <img src="yellow_2.png">
+            <h2>Party Floral Shirt</h2> 
+            <p>₹599</p>
+        </div>
+        
+ 
+  
+    </div>
+    <div class="colors">
+        <h1>Colors</h1>
+        <ul>
+            <li>     <input type="checkbox" id="togglered"> <label>Red<label></label></li>
+            <li>        <input type="checkbox"id="toggleblue"> <label>Blue</label></li>
+            <li>        <input type="checkbox" id="togglegreen"> <label>Green</label></li>
+            <li>        <input type="checkbox" id="toggleyellow"> <label>Yellow</label></li>
+        </ul>
+
+    </div>
+
+
+    <div class="cloths-2">
+        <div class="o" id="summer1">
+            <img src="blue_1.png">
+            <h2>Floral Summer Shirt</h2>
+            <p>₹599</p>
+        </div>
+
+      <div class="t" id="beach1">
+        <img src="blue_2.png">
+        <h2> Shirt Beach Blue</h2>
+        <p>₹499</p>
+      </div>
+
+      <div class="th" id="Party1">
+        <img src="blue_3.png">
+        <h2>Shirt Party Blue</h2>
+        <p>₹499</p>
+      </div>
+    
+    </div>
+    
+  
+    
+ 
+    <div class="cloths-3">
+        <div class="o" id="Party2">
+            <img src="green_1.png">
+            <h2>Party Floral Shirt</h2>
+            <p>₹599</p>
+
+        </div>
+       
+        <div class="t" id="beach2" >
+            <img src="green_2.png">
+            <h2>Shirt Beach Green</h2>
+            <p>₹499</p>
+
+        </div>
+        <div class="th" id="summer2">
+            <img src="green_3.png">
+            <h2>Floral Summer Shirt</h2>
+            <p>₹599</p>
+        </div>
+      
+    </div>
+
+    <div class="arrival">
+        <h1>Arrival</h1>
+        <ul>
+            <li>     
+                   <input type="checkbox" id="togglenew"> <label>New</label>
+            </li>
+            <li> 
+                 <input type="checkbox" id="toggleold"> <label>Old</label>
+            </li>
+      </ul>
+    </div>
+</section>
+        
+<!--footer-->
+<section class="footer">
+    <h1>Nostra</h1>
+    <p>Bringing the latest trends and timeless classics straight to your door.</p>
+    <img src="s1.png">
+    <img src="s2.png">
+    <img src="s3.png">
+
+    <h3>@ 2025 Nostra.com</h3>
+
+</section>
+    
+</body>
+<script>
+
+    
+
+
+// party--------------------------------------------------------------------
+const checkbox1=document.getElementById("toggleCheckbox1")
+const par=document.getElementById("Party")
+const par1=document.getElementById("Party1")
+const par2=document.getElementById("Party2")
+
+checkbox1.addEventListener("click",function(){
+
+  if (checkbox1.checked) {
+
+  sum.style.display='none';
+  par.style.display='inline';
+  bea.style.display='none'
+  par1.style.display = 'inline'
+  sum1.style.display='none'
+  bea1.style.display='none'
+  par2.style.display = 'inline'
+  sum2.style.display='none'
+  bea2.style.display='none'
+  }
+  else {
+    par.style.display = 'inline'
+sum.style.display='inline'
+bea.style.display='inline'
+par1.style.display = 'inline'
+sum1.style.display='inline'
+bea1.style.display='inline'
+par2.style.display ='inline'
+sum2.style.display='inline'
+bea2.style.display='inline'
+
+  }
+
+});
+// ----------------------------------------------------------------
+
+// Beach dress------------------------------------------------
+const checkbox2=document.getElementById("toggleCheckbox2")
+
+const bea=document.getElementById("beach")
+const bea1=document.getElementById("beach1")
+const bea2=document.getElementById("beach2")
+checkbox2.addEventListener("click",function(){
+
+  if (checkbox2.checked) {
+    sum.style.display='none';
+  par.style.display='none';
+  bea.style.display='inline'
+  par1.style.display = 'none'
+  sum1.style.display='none'
+  bea1.style.display='inline'
+  par2.style.display = 'none'
+  sum2.style.display='none'
+  bea2.style.display='inline'
+  }
+  else {
+    par.style.display = 'inline'
+sum.style.display='inline'
+bea.style.display='inline'
+par1.style.display = 'inline'
+sum1.style.display='inline'
+bea1.style.display='inline'
+par2.style.display ='inline'
+sum2.style.display='inline'
+bea2.style.display='inline'
+
+  }
+})
+// --------------Summer--------------------------------------------------
+const checkbox=document.getElementById("toggleCheckbox")
+
+const sum=document.getElementById("summer")
+const sum1=document.getElementById("summer1")
+const sum2=document.getElementById("summer2")
+
+checkbox.addEventListener("click",function(){
+
+  if (checkbox.checked) {
+    sum.style.display='inline';
+  par.style.display='none';
+  bea.style.display='none'
+  par1.style.display = 'none'
+  sum1.style.display='inline'
+  bea1.style.display='none'
+  par2.style.display = 'none'
+  sum2.style.display='inline'
+  bea2.style.display='none'
+  }
+   else {
+    par.style.display = 'inline'
+sum.style.display='inline'
+bea.style.display='inline'
+par1.style.display = 'inline'
+sum1.style.display='inline'
+bea1.style.display='inline'
+par2.style.display ='inline'
+sum2.style.display='inline'
+bea2.style.display='inline'
+
+  }
+})
+// RED-------------------------------------------------
+var check=document.getElementById("togglered")
+
+
+
+check.addEventListener("click",function(){
+
+  if (check.checked) {
+    sum.style.display='none';
+  par.style.display='none';
+  bea.style.display='inline'
+  par1.style.display = 'none'
+  sum1.style.display='none'
+  bea1.style.display='none'
+  par2.style.display = 'none'
+  sum2.style.display='none'
+  bea2.style.display='none'
+  }
+  
+else{
+  par.style.display = 'inline'
+sum.style.display='inline'
+bea.style.display='inline'
+par1.style.display = 'inline'
+sum1.style.display='inline'
+bea1.style.display='inline'
+par2.style.display ='inline'
+sum2.style.display='inline'
+bea2.style.display='inline'
+}
+})
+
+
+// BLUE----------------------------
+var check1=document.getElementById("toggleblue")
+
+check1.addEventListener("click",function(){
+
+if (check1.checked) {
+  sum.style.display='none';
+  par.style.display='none';
+  bea.style.display='none'
+  par1.style.display = 'inline'
+  sum1.style.display='inline'
+  bea1.style.display='none'
+  par2.style.display = 'none'
+  sum2.style.display='none'
+  bea2.style.display='none'
+}
+else{
+  par.style.display = 'inline'
+sum.style.display='inline'
+bea.style.display='inline'
+par1.style.display = 'inline'
+sum1.style.display='inline'
+bea1.style.display='inline'
+par2.style.display ='inline'
+sum2.style.display='inline'
+bea2.style.display='inline'
+}
+})
+// Green-----------------------------------
+var check2=document.getElementById("togglegreen")
+
+
+check2.addEventListener("click",function(){
+
+if (check2.checked) {
+  sum.style.display='none';
+  par.style.display='none';
+  bea.style.display='none'
+  par1.style.display = 'none'
+  sum1.style.display='none'
+  bea1.style.display='none'
+  par2.style.display = 'inline'
+  sum2.style.display='inline'
+  bea2.style.display='inline'
+}
+else{
+  par.style.display = 'inline'
+sum.style.display='inline'
+bea.style.display='inline'
+par1.style.display = 'inline'
+sum1.style.display='inline'
+bea1.style.display='inline'
+par2.style.display ='inline'
+sum2.style.display='inline'
+bea2.style.display='inline'
+}
+})
+
+// yellow-----------------------------------------------
+var check3=document.getElementById("toggleyellow")
+
+check3.addEventListener("click",function(){
+
+
+  if (check3.checked) {
+
+sum.style.display='inline';
+  par.style.display='inline';
+  bea.style.display='none'
+  par1.style.display = 'none'
+  sum1.style.display='none'
+  bea1.style.display='none'
+  par2.style.display = 'none'
+  sum2.style.display='none'
+  bea2.style.display='none'
+
+}
+else{
+ 
+  par.style.display = 'inline'
+sum.style.display='inline'
+bea.style.display='inline'
+par1.style.display = 'inline'
+sum1.style.display='inline'
+bea1.style.display='inline'
+par2.style.display ='inline'
+sum2.style.display='inline'
+bea2.style.display='inline'
+ 
+}
+
+})
+
+// All------------------------------------
+var check4=document.getElementById("toggleCheckbox3")
+
+
+check4.addEventListener("click",function(){
+
+
+if (check4.unchecked) {
+sum.style.display='inline';
+par.style.display='inline';
+
+}
+else{
+par.style.display = 'inline'
+sum.style.display='inline'
+bea.style.display='inline'
+par1.style.display = 'inline'
+sum1.style.display='inline'
+bea1.style.display='inline'
+par2.style.display ='inline'
+sum2.style.display='inline'
+bea2.style.display='inline'
+
+}
+
+})
+// Arrival new-----------------------------------
+var check5=document.getElementById("togglenew")
+
+
+check5.addEventListener("click",function(){
+
+
+if (check5.checked) {
+
+  sum.style.display='none';
+  par.style.display='none';
+  bea.style.display='inline'
+  par1.style.display = 'none'
+  sum1.style.display='inlinee'
+  bea1.style.display='none'
+  par2.style.display = 'inline'
+  sum2.style.display='none'
+  bea2.style.display='none'
+}
+else{
+par.style.display = 'inline'
+sum.style.display='inline'
+bea.style.display='inline'
+par1.style.display = 'inline'
+sum1.style.display='inline'
+
+bea1.style.display='inline' 
+par2.style.display ='inline'
+sum2.style.display='inline'
+bea2.style.display='inline'
+
+}
+
+})
+
+// Arrival old----------------------------------------------
+
+var check6=document.getElementById("toggleold")
+
+
+check6.addEventListener("click",function(){
+
+
+if (check6.checked) {
+
+  sum.style.display='inline';
+  par.style.display='inline';
+  bea.style.display='none'
+  par1.style.display = 'inline'
+  sum1.style.display='none'
+  bea1.style.display='inline'
+  par2.style.display = 'none'
+  sum2.style.display='inline'
+  bea2.style.display='inline'
+}
+else{
+par.style.display = 'inline'
+sum.style.display='inline'
+bea.style.display='inline'
+par1.style.display = 'inline'
+sum1.style.display='inline'
+bea1.style.display='inline'
+par2.style.display ='inline'
+sum2.style.display='inline'
+bea2.style.display='inline'
+
+}
+
+})
+
+
+</script>
+
+
+</html>

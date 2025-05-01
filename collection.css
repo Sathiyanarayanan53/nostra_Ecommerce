@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ads {
+    background-color: rgb(4, 4, 63);
+    color: white;
+    display: flex;
+    height: 50px;
+
+    flex-direction: row;
+}
+
+.ads h2 {
+    margin-left: 410px;
+    padding: 5px;
+}
+span {
+    font-weight: bolder;
+    font-size: larger;
+    color: greenyellow;
+}
+
+.ads p {
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+     z-index: 1;
+     background-color: white;
+
+}
+
+.navbar h1 {
+    font-size: 35px;
+    padding: 15px;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 10px;
+    /* border: 1px solid red; */
+    margin-left: 10px;
+    font-size: 23px;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+
+
+
+}
+
+.navbar li:hover {
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 40%;
+}
+.navbar a{
+    text-decoration: none;
+    color:black ;
+}
+.line{
+    position: absolute;
+    border-left: 6px solid black;
+    margin-left: 450px;
+    height: 1600px;
+}
+.container{
+    margin-top:30px;
+    display: grid;
+    grid-template-columns:500px 1150px ;
+    grid-template-rows: 250px 100px  200px 400px 100px 300px;
+   
+}
+.container input[type="checkbox"]{
+width: 50px;
+height:20px;
+}
+
+.occasion h1,
+.colors h1,
+.arrival h1{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.occasion ul,
+.colors ul ,
+.arrival ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    list-style: none;
+}
+.occasion  label,
+.colors label,
+.arrival label{
+
+    font-size: 35px;
+}
+.searchbar input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+}
+.searchbar ::placeholder{
+    font-size: 20px;
+    padding: 10px;
+    
+}
+.searchbar img{
+    position: absolute;
+    margin-top:-43px;
+    height: 30px;
+    margin-left: 65%;
+}
+ .searchbar input:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+ }
+.cloths-1{
+ 
+    grid-row: span 2;
+    grid-column: span 1;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+.cloths-1 img,
+.cloths-2 img,
+.cloths-3 img{
+    width:250px;
+    height:350px;
+    padding: 30px;
+
+   
+}
+.cloths-1 h2,
+.cloths-2 h2,
+.cloths-3 h2{
+    font-size: 32px;
+    color: black ;
+}
+.cloths-1 p,
+.cloths-2 p,
+.cloths-3 p{
+    font-size: 20px;
+}
+.t h2
+{
+    position: absolute;
+    margin-left:40px;
+}
+.t p{
+    margin-top: 35px;
+    margin-left: 40px;
+}
+.th h2{
+    position: absolute;
+    margin-left:40px;
+}
+.th p{
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.colors{
+   
+    grid-row: span 2;
+
+}
+.cloths-2{
+    background-color: teal;
+    margin-top: 300px;
+    
+}
+
+
+
+
+.cloths-3{
+
+    margin-top:700px;
+}
+
+.cloths-1,
+.cloths-2,
+.cloths-3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cloths-1 .o,
+.cloths-1 .t,
+.cloths-1 .th,
+.cloths-2 .o,
+.cloths-2 .t,
+.cloths-2 .th,
+.cloths-3 .o,
+.cloths-3 .t,
+.cloths-3 .th{
+    
+    /* border: 1px solid red; */
+    padding: 20px;
+    /* background-color: aqua; */
+}
+
+.footer{
+    margin-top: 250px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(37, 37, 101);
+    color: white;
+}
+.footer h1{
+    font-size: 40px;
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-left: 30px;
+
+}
+.footer p{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+.footer img{
+    width:40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+   
+    margin-left: 30px;
+}
+.footer h3{
+    font-size: 28px;
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+
+
